@@ -236,8 +236,32 @@ const categories: Category[] = [
   }
 },
  
-      { title: 'Výletní loď ke skalám' },
-      { title: 'Sezónní přívoz na ostrov' },
+     {
+  title: 'Přívoz Frymburk – Frýdava',
+  detail: {
+    image: {
+      src: '/images/přívoz Frymburk.jfif',
+      alt: 'Přívoz Frymburk – Frýdava na Lipenském jezeře'
+    },
+    description: 'Přívoz Frymburk – Frýdava pluje každou celou hodinu. Spojuje levý a pravý břeh Lipenské nádrže a přepravuje osoby, cyklisty i vozidla.',
+    websiteUrl: 'https://privozfrymburk.cz/',
+    mapEmbedUrl: 'test' // vložte svůj embed kód
+  }
+},
+
+      {
+  title: 'Přívoz Lipno – Dolní Vltavice',
+  detail: {
+    image: {
+      src: '/images/přívoz DV.jfif',
+      alt: 'Přívoz Lipno – Dolní Vltavice'
+    },
+    description: 'Přívoz Lipno – Dolní Vltavice jezdí od 1. května do 31. října. ',
+    websiteUrl: 'https://cyklotrasy-sumava.cz/',
+    mapEmbedUrl: 'test' // vložte svůj embed kód
+  }
+},
+
     ],
   },
 ];
