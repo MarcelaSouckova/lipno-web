@@ -151,7 +151,7 @@ const categories: Category[] = [
         title: 'Ski areál Lipno',
         detail: {
           image: {
-            src: '/images/lyžař.jfif',
+            src: '/images/lyzar.jfif',
             alt: 'Lyžař na sjezdovce na Lipně'
           },
           description: 'Skiareál Lipno se specializuje na rodiny s dětmi a lyžařskou výuku začátečníků a mírně pokročilých přímo v Lipně nad Vltavou. Lyžaři ocení pohodlnou přepravu na 3 čtyřsedačkových lanovkách, bezpečné a kvalitně zasněžované sjezdovky či snowpark se zábavnou skicrossovou dráhou. Klenotem Skiareálu Lipno je Foxpark, který je nejmodernějším výukovým hřištěm se třemi pojízdnými koberci, pohádkovými slalomy a zábavným výukovým programem s maskotem lišákem Foxem.',
