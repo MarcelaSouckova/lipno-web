@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { google }                   from "googleapis";
 import { getServerSession }         from "next-auth/next";
-import { authOptions }              from "@/lib/auth";
+import { authOptions }              from "@/app/lib/auth";
 
 type EventRequest = {
   summary: string;
