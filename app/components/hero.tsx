@@ -20,7 +20,7 @@ export default function HeroSection() {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]); // ← přidali jsme sem images.length
 
   return (
     <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
@@ -47,25 +47,25 @@ export default function HeroSection() {
 
       {/* Content: text highlighted with drop-shadow for visibility */}
       <div className="relative z-10 px-4 text-center max-w-2xl">
-      <h1
-  className={`
-    text-3xl sm:text-4xl lg:text-5xl 
-    font-black text-orange-200 mb-4
-    [text-shadow:2px_1px_0_#172554]
-  `}
->
-  PRONÁJEM APARTMÁNU
-</h1>
+        <h1
+          className={`
+            text-3xl sm:text-4xl lg:text-5xl 
+            font-black text-orange-200 mb-4
+            [text-shadow:2px_1px_0_#172554]
+          `}
+        >
+          PRONÁJEM APARTMÁNU
+        </h1>
 
+        <p
+          className={`
+            text-base sm:text-lg mb-6 text-white
+            [text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]
+          `}
+        >
+          Užijte si klidné prostředí a prvotřídní vybavení během vašeho pobytu.
+        </p>
 
-<p
-  className={`
-    text-base sm:text-lg mb-6 text-white
-    [text-shadow:2px_2px_2px_rgba(0,0,0,0.8)]
-  `}
->
-  Užijte si klidné prostředí a prvotřídní vybavení během vašeho pobytu.
-</p>
         <Link
           href="/reservation"
           className="inline-block px-6 py-3 text-lg font-semibold rounded-lg bg-[#FF9149] hover:bg-orange-500 transition-colors duration-200 drop-shadow-lg sm:hidden"

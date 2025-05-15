@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaHiking, FaChild, FaUtensils, FaTheaterMasks, FaBicycle, FaShip, FaSnowflake } from 'react-icons/fa';
-
+import { FaHiking, FaChild, FaUtensils, FaBicycle, FaShip, FaSnowflake } from 'react-icons/fa';
+ 
 interface Detail {
   image: { src: string; alt: string };
   description: string;
   websiteUrl: string;
   mapEmbedUrl: string;
 }
-
+ 
 interface Suggestion {
   title: string;
   detail?: Detail;
 }
-
+ 
 interface Category {
   title: string;
   icon: React.ElementType;
   suggestions: Suggestion[];
 }
-
+ 
 const categories: Category[] = [
   {
     title: 'Výlety',
@@ -114,7 +114,7 @@ const categories: Category[] = [
           mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.8178620924377!2d14.121293374960723!3d48.689846871309754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477362f048c40a17%3A0xf5f02043747855ca!2sPenzion%20Kov%C3%A1%C5%99ov%20-%20Lipno!5e0!3m2!1scs!2scz!4v1746783282539!5m2!1scs!2scz'
         }
       },
-      
+     
       {
         title: 'Hotel Maxant Frymburk',
         detail: {
@@ -140,7 +140,7 @@ const categories: Category[] = [
           mapEmbedUrl: 'https://www.google.com/maps?q=Kynut%C3%A1+buchta+bistro&output=embed'
         }
       }
-      
+     
     ],
   },
   {
@@ -159,7 +159,7 @@ const categories: Category[] = [
           mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21089.802649378547!2d14.182883374316411!3d48.64380439999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47737b2c913f9773%3A0xc1b1c5c77b011c00!2zUm9kaW5uw70gYXJlw6FsIExpcG5v!5e0!3m2!1scs!2sus!4v1747066127692!5m2!1scs!2sus'
         }
       },
-      
+     
       {
         title: 'Běžkařské trasy Frymburk - Lipno',
         detail: {
@@ -186,7 +186,7 @@ const categories: Category[] = [
       },
     ],
   },
-
+ 
   {
   title: 'Půjčovny',
   icon: FaBicycle,
@@ -215,10 +215,10 @@ const categories: Category[] = [
         mapEmbedUrl: 'test' // vložte svůj embed kód
       }
     },
-    
+   
   ]
 },
-
+ 
   {
     title: 'Přívozy',
     icon: FaShip,
@@ -230,27 +230,27 @@ const categories: Category[] = [
       src: '/images/cyklopřevoz.jfif',
       alt: 'Cyklopřevoz Hrdoňov – Svatý Tomáš na Lipenském jezeře'
     },
-    description: 'Cyklopřevoz Hrdoňov – Svatý Tomáš jezdí v letní sezóně (květen–září) denně od 9:00 do 18:00 hodin; mohou ho využít cyklisté i pěší turisté. ',  // :contentReference[oaicite:0]{index=0}
+    description: 'Cyklopřevoz Hrdoňov – Svatý Tomáš jezdí v letní sezóně (květen–září) denně od 9:00 do 18:00 hodin; mohou ho využít cyklisté i pěší turisté. ',
     websiteUrl: 'https://lipnobluemarine.cz/cykloprevoz/',
     mapEmbedUrl: 'test' // vložte svůj embed kód
   }
 },
-
+ 
       { title: 'Výletní loď ke skalám' },
       { title: 'Sezónní přívoz na ostrov' },
     ],
   },
 ];
-
+ 
 const Tipy: React.FC = () => {
   const [openCategory, setOpenCategory] = useState<number | null>(null);
   const [openDetail, setOpenDetail] = useState<{ cat: number; idx: number } | null>(null);
-
+ 
   const toggleCategory = (idx: number) => {
     setOpenCategory(openCategory === idx ? null : idx);
     setOpenDetail(null);
   };
-
+ 
   const toggleDetail = (catIdx: number, itemIdx: number) => {
     setOpenDetail(
       openDetail?.cat === catIdx && openDetail.idx === itemIdx
@@ -258,7 +258,7 @@ const Tipy: React.FC = () => {
         : { cat: catIdx, idx: itemIdx }
     );
   };
-
+ 
   return (
     <section className="max-w-screen-lg mx-auto p-6">
       <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
@@ -284,7 +284,7 @@ const Tipy: React.FC = () => {
                 {openCategory === catIdx ? '−' : '+'}
               </span>
             </button>
-
+ 
             {openCategory === catIdx && (
               <ul className="space-y-3">
                 {cat.suggestions.map((sug, idx) => (
@@ -302,7 +302,7 @@ const Tipy: React.FC = () => {
                         </button>
                       )}
                     </div>
-
+ 
                     {openDetail?.cat === catIdx && openDetail.idx === idx && sug.detail && (
                       <div className="mt-4 bg-gray-50 rounded-lg p-4 space-y-4">
                         <Image
@@ -325,7 +325,7 @@ const Tipy: React.FC = () => {
                             Oficiální stránky
                           </a>
                         </div>
-                        <div className="mt-2">   
+                        <div className="mt-2">  
                           <iframe
                             src={sug.detail.mapEmbedUrl}
                             width="100%"
@@ -347,5 +347,5 @@ const Tipy: React.FC = () => {
     </section>
   );
 };
-
+ 
 export default Tipy;

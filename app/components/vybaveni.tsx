@@ -1,9 +1,11 @@
+"use client";
+
 import React from 'react';
+import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
-import {
+import { 
   GiValley,
   GiTowel,
-  GiFeather,
   GiBarbecue,
   GiCookingPot,
   GiToaster,
@@ -16,7 +18,6 @@ import {
   FaMountain,
   FaUmbrellaBeach,
   FaWater,
-  FaUtensils,
   FaBed,
   FaSoap,
   FaToiletPaper,
@@ -28,7 +29,6 @@ import {
   FaChessBoard,
   FaChild,
   FaDoorOpen,
-  FaTree,
   FaPaw,
   FaAccessibleIcon,
   FaKey,
@@ -38,7 +38,6 @@ import {
 } from 'react-icons/fa';
 import { IoIosShirt } from 'react-icons/io';
 import { MdMicrowave } from 'react-icons/md';
-import { GiCurlingStone } from 'react-icons/gi';
 
 interface Feature {
   icon: React.ElementType;
@@ -130,13 +129,13 @@ const sections: Section[] = [
 const Vybaveni: React.FC = () => (
   <div className="max-w-screen-md mx-auto p-4">
     <div className="mb-4">
-      <a
+      <Link
         href="/"
         className="inline-flex items-center text-indigo-500 hover:underline text-sm font-medium"
       >
         <FiArrowLeft className="w-4 h-4 mr-2" />
         Návrat na hlavní stránku
-      </a>
+      </Link>
     </div>
     <section>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
