@@ -18,11 +18,11 @@ export default function Gallery() {
     {
       name: 'Okolí',
       photos: [
-        { src: '/images/okoli_1.jpg', alt: 'Okolí 1' },
+        { src: '/images/okoli_1.webp', alt: 'Okolí 1' },
         { src: '/images/okolí 2.jpg', alt: 'Okolí 2' },
         { src: '/images/okolí 3.jpeg', alt: 'Okolí 3' },
         { src: '/images/okolí 4.jpg', alt: 'Okolí 4' },
-        { src: '/images/okoli_5.jpg', alt: 'Okolí 5' },
+        { src: '/images/okoli_5.webp', alt: 'Okolí 5' },
         { src: '/images/okolí 6.jpg', alt: 'Okolí 6' },
         { src: '/images/okolí 7.jpg', alt: 'Okolí 7' },
         { src: '/images/okolí 8.jpeg', alt: 'Okolí 8' },
