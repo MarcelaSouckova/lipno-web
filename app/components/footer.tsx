@@ -61,24 +61,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Newsletter */}
-        <div className="flex flex-col items-center sm:items-end">
-          <h5 className="text-base font-semibold mb-3 uppercase tracking-wider">Newsletter</h5>
-          <p className="text-sm mb-4">Získejte novinky a speciální nabídky.</p>
-          <form className="flex w-full max-w-xs">
-            <input
-              type="email"
-              placeholder="Váš e-mail"
-              className="w-full px-4 py-2 rounded-l-lg bg-blue-700 placeholder-gray-300 text-gray-100 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="px-4 py-2 bg-[#FF9149] rounded-r-lg font-semibold hover:bg-orange-500 transition-colors"
-            >
-              Odeslat
-            </button>
-          </form>
-        </div>
+        
       </div>
 
       <div className="mt-12 border-t border-blue-700 pt-6 text-center text-xs text-gray-400">
