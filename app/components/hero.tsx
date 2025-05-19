@@ -1,19 +1,19 @@
 "use client";
-
+ 
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-
+ 
 export default function HeroSection() {
   // Array of image sources
   const images = [
     '/images/IMG_1590.webp',
     '/images/IMG_0364.webp',
-    '/images/IMG_0352.webp',
+    '/images/apt_66.webp',
   ];
-
+ 
   const [current, setCurrent] = useState(0);
-
+ 
   // Change image every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,7 +21,7 @@ export default function HeroSection() {
     }, 3000);
     return () => clearInterval(interval);
   }, [images.length]); // ← přidali jsme sem images.length
-
+ 
   return (
     <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background slideshow */}
@@ -41,22 +41,22 @@ export default function HeroSection() {
           />
         </div>
       ))}
-
+ 
       {/* Light overlay to slightly darken image */}
       <div className="absolute inset-0 bg-black opacity-40" />
-
+ 
       {/* Content: text highlighted with drop-shadow for visibility */}
       <div className="relative z-10 px-4 text-center max-w-2xl">
         <h1
           className={`
-            text-3xl sm:text-4xl lg:text-5xl 
+            text-3xl sm:text-4xl lg:text-5xl
             font-black text-orange-200 mb-4
             [text-shadow:2px_1px_0_#172554]
           `}
         >
           PRONÁJEM APARTMÁNU
         </h1>
-
+ 
         <p
           className={`
             text-base sm:text-lg mb-6 text-white
@@ -65,7 +65,7 @@ export default function HeroSection() {
         >
           Užijte si klidné prostředí a prvotřídní vybavení během vašeho pobytu.
         </p>
-
+ 
         <Link
           href="/reservation"
           className="inline-block px-6 py-3 text-lg font-semibold rounded-lg bg-[#FF9149] hover:bg-orange-500 transition-colors duration-200 drop-shadow-lg sm:hidden"

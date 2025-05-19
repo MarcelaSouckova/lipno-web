@@ -2,27 +2,27 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiArrowLeft } from 'react-icons/fi'
-
+ 
 export interface Photo {
   src: string
   alt?: string
 }
-
+ 
 interface Category {
   name: string
   photos: Photo[]
 }
-
+ 
 export default function Gallery() {
   const categories: Category[] = [
     {
       name: 'Okolí',
       photos: [
-        { src: '/images/okolí 1.jpg', alt: 'Okolí 1' },
+        { src: '/images/okoli_1.jpg', alt: 'Okolí 1' },
         { src: '/images/okolí 2.jpg', alt: 'Okolí 2' },
         { src: '/images/okolí 3.jpeg', alt: 'Okolí 3' },
         { src: '/images/okolí 4.jpg', alt: 'Okolí 4' },
-        { src: '/images/okolí 5.jpg', alt: 'Okolí 5' },
+        { src: '/images/okoli_5.jpg', alt: 'Okolí 5' },
         { src: '/images/okolí 6.jpg', alt: 'Okolí 6' },
         { src: '/images/okolí 7.jpg', alt: 'Okolí 7' },
         { src: '/images/okolí 8.jpeg', alt: 'Okolí 8' },
@@ -31,19 +31,17 @@ export default function Gallery() {
         { src: '/images/okolí 11.jpeg', alt: 'Okolí 11' },
         { src: '/images/okolí 12.jpg', alt: 'Okolí 12' },
         { src: '/images/okolí 13.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 14.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 15.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 16.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 17.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 18.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 19.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 20.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 21.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 22.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 23.jpeg', alt: 'Okolí 13' },
-        { src: '/images/okolí 24.jpeg', alt: 'Okolí 13' },
-        
-       
+        { src: '/images/okolí 14.jpeg', alt: 'Okolí 14' },
+        { src: '/images/okolí 15.jpeg', alt: 'Okolí 15' },
+        { src: '/images/okolí 16.jpeg', alt: 'Okolí 16' },
+        { src: '/images/okolí 17.jpeg', alt: 'Okolí 17' },
+        { src: '/images/okolí 18.jpeg', alt: 'Okolí 18' },
+        { src: '/images/okolí 19.jpeg', alt: 'Okolí 19' },
+        { src: '/images/okolí 20.jpeg', alt: 'Okolí 20' },
+        { src: '/images/okolí 21.jpeg', alt: 'Okolí 21' },
+        { src: '/images/okolí 22.jpeg', alt: 'Okolí 22' },
+        { src: '/images/okolí 23.jpeg', alt: 'Okolí 23' },
+        { src: '/images/okolí 24.jpeg', alt: 'Okolí 24' },
       ],
     },
     {
@@ -70,16 +68,15 @@ export default function Gallery() {
         { src: '/images/apt 19.jpg', alt: 'Apartmán 19' },
         { src: '/images/apt 20.jpeg', alt: 'Apartmán 20' },
         { src: '/images/apt 21.jpg', alt: 'Apartmán 21' },
-       
       ],
     },
   ]
-
+ 
   const [activeIndex, setActiveIndex] = useState(0)
   const activeCategory = categories[activeIndex]
-
+ 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 py-12">
+    <div className="w-full max-w-5xl mx-auto px-4 py-12 bg-white dark:bg-white rounded-lg shadow-lg">
       {/* Návrat na hlavní stránku */}
       <div className="mb-6">
         <Link
@@ -90,30 +87,31 @@ export default function Gallery() {
           Návrat na hlavní stránku
         </Link>
       </div>
-
+ 
       {/* Nadpis a krátký popis */}
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-blue-950">Galerie</h2>
         <p className="text-gray-600">Prohlédněte si fotografie apartmánu a jeho okolí.</p>
       </div>
-
+ 
       {/* Přepínače kategorií */}
       <div className="flex justify-center mb-6 space-x-4">
         {categories.map((cat, idx) => (
           <button
             key={cat.name}
             onClick={() => setActiveIndex(idx)}
-            className={`px-4 py-2 rounded-md font-medium transition-colors duration-200
+            className={`
+              px-4 py-2 rounded-md font-medium transition-colors duration-200
               ${idx === activeIndex
                 ? 'bg-orange-600 text-white'
-                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`
-            }
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}
+            `}
           >
             {cat.name}
           </button>
         ))}
       </div>
-
+ 
       {/* Mřížka fotek */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {activeCategory.photos.map((photo, i) => (
