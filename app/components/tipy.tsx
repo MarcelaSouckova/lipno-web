@@ -28,7 +28,7 @@ const categories: Category[] = [
       {
         title: 'Naučná stezka Olšina',
         detail: {
-          image: { src: '/images/Olsina.jfif', alt: 'Naučná stezka Olšina' },
+          image: { src: '/images/Olsina.webp', alt: 'Naučná stezka Olšina' },
           description:
             'Přírodovědná naučná stezka kolem rašelinišť u Olšiny se zastaveními a informačními panely o místní flóře a fauně.',
           websiteUrl: 'https://www.vls.cz/cs/naucna-stezka-olsina',
