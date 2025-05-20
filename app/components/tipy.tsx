@@ -51,7 +51,7 @@ const categories: Category[] = [
       {
         title: 'Hrad Vítkův Kámen',
         detail: {
-          image: { src: '/images/Vítkův hrádek.jfif', alt: 'Hrad Vítkův Kámen' },
+          image: { src: '/images/Vítkův hrádek.webp', alt: 'Hrad Vítkův Kámen' },
           description:
             'Gotický hrad z 13. století s expozicemi a průvodcovskými prohlídkami. Krásný výhled na Šumavu a Lipno.',
           websiteUrl: 'https://www.vitkuvhradek.eu',
@@ -68,7 +68,7 @@ const categories: Category[] = [
       {
         title: 'Království lesa',
         detail: {
-          image: { src: '/images/Království lesa.jfif', alt: 'Království lesa' },
+          image: { src: '/images/Království lesa.webp', alt: 'Království lesa' },
           description:
             'Dětský ráj plný zábavy! Království lesa na Lipně nabízí desítky atrakcí, tvořivé dílničky, království zvířátek a herní prvky v krásné přírodě.',
           websiteUrl: 'https://www.kralovstvilesa.cz/',
@@ -79,7 +79,7 @@ const categories: Category[] = [
       {
         title: 'Stezka korunami stromů',
         detail: {
-          image: { src: '/images/Stezka korunami.jfif', alt: 'Stezka korunami stromů' },
+          image: { src: '/images/Stezka korunami.webp', alt: 'Stezka korunami stromů' },
           description:
             'Vydejte se na unikátní Stezku korunami stromů v Lipně, která nabízí chodník v korunách stromů, vyhlídkovou věž a úchvatné výhledy na okolní lesy a jezero.',
           websiteUrl: 'https://www.stezkakorunamistromu.cz/',
@@ -151,7 +151,7 @@ const categories: Category[] = [
         title: 'Ski areál Lipno',
         detail: {
           image: {
-            src: '/images/lyzar.jfif',
+            src: '/images/lyzar.webp',
             alt: 'Lyžař na sjezdovce na Lipně'
           },
           description: 'Skiareál Lipno se specializuje na rodiny s dětmi a lyžařskou výuku začátečníků a mírně pokročilých přímo v Lipně nad Vltavou. Lyžaři ocení pohodlnou přepravu na 3 čtyřsedačkových lanovkách, bezpečné a kvalitně zasněžované sjezdovky či snowpark se zábavnou skicrossovou dráhou. Klenotem Skiareálu Lipno je Foxpark, který je nejmodernějším výukovým hřištěm se třemi pojízdnými koberci, pohádkovými slalomy a zábavným výukovým programem s maskotem lišákem Foxem.',
@@ -164,7 +164,7 @@ const categories: Category[] = [
         title: 'Běžkařské trasy Frymburk - Lipno',
         detail: {
           image: {
-            src: '/images/běžky.jfif',
+            src: '/images/běžky.webp',
             alt: 'Běžkař na trase v zasněžené Šumavě'
           },
           description: 'Oblast Lipna a Šumavy nabízí téměř 40 km pravidelně upravovaných tratí pro klasiku i bruslení',
@@ -195,7 +195,7 @@ const categories: Category[] = [
       title: 'Půjčovna sportovního vybavení Frymburk',
       detail: {
         image: {
-          src: '/images/půjčovna.jfif',
+          src: '/images/půjčovna.webp',
           alt: 'půjčovna sportovního vybavení'
         },
         description: 'Půjčovna sportovního vybavení jen 50 m od Jezerní cyklostezky Frymburk–Lipno. Nabízíme kola, elektrokola, koloběžky, inline brusle i zimní výbavu',
@@ -207,7 +207,7 @@ const categories: Category[] = [
       title: 'Lipno centrum',
       detail: {
         image: {
-          src: '/images/paddleboard.jfif',
+          src: '/images/paddleboard.webp',
           alt: 'Lidé na paddleboardu na Lipenském jezeře'
         },
         description: 'Vydejte se objevovat klidné zálivy Lipna v kajaku nebo na paddleboardu.',
@@ -227,7 +227,7 @@ const categories: Category[] = [
   title: 'Cyklopřevoz Hrdoňov – Svatý Tomáš',
   detail: {
     image: {
-      src: '/images/cyklopřevoz.jfif',
+      src: '/images/cyklopřevoz.webp',
       alt: 'Cyklopřevoz Hrdoňov – Svatý Tomáš na Lipenském jezeře'
     },
     description: 'Cyklopřevoz Hrdoňov – Svatý Tomáš jezdí v letní sezóně (květen–září) denně od 9:00 do 18:00 hodin; mohou ho využít cyklisté i pěší turisté. ',
@@ -253,7 +253,7 @@ const categories: Category[] = [
   title: 'Přívoz Lipno – Dolní Vltavice',
   detail: {
     image: {
-      src: '/images/přívoz DV.jfif',
+      src: '/images/přívoz DV.webp',
       alt: 'Přívoz Lipno – Dolní Vltavice'
     },
     description: 'Přívoz Lipno – Dolní Vltavice jezdí od 1. května do 31. října. ',
