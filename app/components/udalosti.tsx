@@ -34,29 +34,9 @@ const events: Event[] = [
     imageSrc: '/images/open_air_cinema.jpg',
     description: 'Promítání klasických i nových filmů přímo pod hvězdami. Vstup zdarma.',
   },
-  {
-    title: 'Hudební koncert na molu',
-    date: '23. srpna 2025, 18:00',
-    location: 'Molo u pláže',
-    imageSrc: '/images/boat_concert.jpg',
-    description: 'Večerní koncert kombinující živou hudbu a západ slunce nad jezerem.',
-    link: 'https://example.com/boat-concert'
-  },
-  {
-    title: 'Výstava místního umění',
-    date: '1.–15. září 2025',
-    location: 'Galerie Frymburk',
-    imageSrc: '/images/art_exhibition.jpg',
-    description: 'Prezentace obrazů, fotografií a soch od umělců regionu Šumava.',
-  },
-  {
-    title: 'Parníček na plavbě jezerem',
-    date: 'Každou neděli od 10:00',
-    location: 'Přístaviště Frymburk',
-    imageSrc: '/images/steam_boat.jpg',
-    description: 'Dvouhodinová nostalgická plavba parním člunem s výkladem kapitána.',
-    link: 'https://example.com/steam-boat'
-  },
+  
+  
+  
 ];
 
 export default function Udalosti() {
