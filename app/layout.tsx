@@ -8,7 +8,10 @@ const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin']
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="cs">
-      <head />
+      <head>
+        <link rel="icon" href="/images/room-key.png" type="image/png" />
+        <title>Pronájem Apartmánu Lipno</title>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
           {children}
