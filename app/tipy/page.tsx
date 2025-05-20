@@ -1,4 +1,3 @@
-// pages/contact.tsx
 "use client";
 
 import React from 'react';
@@ -10,7 +9,7 @@ import Footer from '../components/footer';
 
 export default function TipyPage() {
   return (
-    <>
+    <div className="bg-white min-h-screen">
       <Navbar />
       <div className="max-w-screen-md mx-auto p-4">
         <div className="mb-4">
@@ -25,6 +24,6 @@ export default function TipyPage() {
         <Tipy />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

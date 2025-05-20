@@ -1,4 +1,3 @@
-// pages/vybaveni.tsx
 "use client";
 
 import React from 'react';
@@ -8,10 +7,10 @@ import Footer from '../components/footer';
 
 export default function VybaveniPage() {
   return (
-    <>
+    <div className="bg-white min-h-screen">
       <Navbar />
       <Vybaveni />
       <Footer />
-    </>
+    </div>
   );
 }

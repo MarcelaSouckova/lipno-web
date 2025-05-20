@@ -1,4 +1,3 @@
-// pages/contact.tsx
 "use client";
 
 import React from 'react';
@@ -10,7 +9,7 @@ import Footer from '../components/footer';
 
 export default function UdalostiPage() {
   return (
-    <>
+    <div className="bg-white min-h-screen">
       <Navbar />
       <div className="max-w-screen-md mx-auto p-4">
         <Link href="/" className="flex items-center mb-6 text-indigo-600 hover:text-indigo-800">
@@ -20,6 +19,6 @@ export default function UdalostiPage() {
         <Udalosti />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
