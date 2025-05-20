@@ -81,7 +81,7 @@ export default function Navbar() {
                   <Link href="/tipy" className="block px-4 py-2 hover:bg-blue-800">
                     Tipy na výlety
                   </Link>
-                  <Link href="/udalosti" className="block px-4 py-2 hover:bg-blue-800">
+                  <Link href="/aktuality" className="block px-4 py-2 hover:bg-blue-800">
                     Aktuality
                   </Link>
                 </div>
@@ -173,10 +173,10 @@ function MobileInfoMenu() {
       </button>
       {open && (
         <div className="pl-4 space-y-1">
-          <Link href="/amenities" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-800">
+          <Link href="/vybaveni" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-800">
             Vybavení apartmánu
           </Link>
-          <Link href="/tipy-na-vylety" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-800">
+          <Link href="/tipy" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-800">
             Tipy na výlety
           </Link>
           <Link href="/aktuality" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-800">

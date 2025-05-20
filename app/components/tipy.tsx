@@ -212,7 +212,7 @@ const categories: Category[] = [
         },
         description: 'Vydejte se objevovat klidné zálivy Lipna v kajaku nebo na paddleboardu.',
         websiteUrl: 'https://www.lipnocentrum.cz/',
-        mapEmbedUrl: 'test' // vložte svůj embed kód
+        mapEmbedUrl: 'test'
       }
     },
    
@@ -232,7 +232,7 @@ const categories: Category[] = [
     },
     description: 'Cyklopřevoz Hrdoňov – Svatý Tomáš jezdí v letní sezóně (květen–září) denně od 9:00 do 18:00 hodin; mohou ho využít cyklisté i pěší turisté. ',
     websiteUrl: 'https://lipnobluemarine.cz/cykloprevoz/',
-    mapEmbedUrl: 'test' // vložte svůj embed kód
+    mapEmbedUrl: 'test'
   }
 },
  
@@ -245,10 +245,10 @@ const categories: Category[] = [
     },
     description: 'Přívoz Frymburk – Frýdava pluje každou celou hodinu. Spojuje levý a pravý břeh Lipenské nádrže a přepravuje osoby, cyklisty i vozidla.',
     websiteUrl: 'https://privozfrymburk.cz/',
-    mapEmbedUrl: 'test' // vložte svůj embed kód
+    mapEmbedUrl: 'test'
   }
 },
-
+ 
       {
   title: 'Přívoz Lipno – Dolní Vltavice',
   detail: {
@@ -258,10 +258,10 @@ const categories: Category[] = [
     },
     description: 'Přívoz Lipno – Dolní Vltavice jezdí od 1. května do 31. října. ',
     websiteUrl: 'https://cyklotrasy-sumava.cz/',
-    mapEmbedUrl: 'test' // vložte svůj embed kód
+    mapEmbedUrl: 'test'
   }
 },
-
+ 
     ],
   },
 ];
@@ -349,15 +349,17 @@ const Tipy: React.FC = () => {
                             Oficiální stránky
                           </a>
                         </div>
-                        <div className="mt-2">  
-                          <iframe
-                            src={sug.detail.mapEmbedUrl}
-                            width="100%"
-                            height="200"
-                            allowFullScreen={false}
-                            loading="lazy"
-                            className="rounded-md border"
-                          />
+                        <div className="mt-2">
+                          {sug.detail.mapEmbedUrl !== 'test' && (
+                            <iframe
+                              src={sug.detail.mapEmbedUrl}
+                              width="100%"
+                              height="200"
+                              allowFullScreen={false}
+                              loading="lazy"
+                              className="rounded-md border"
+                            />
+                          )}
                         </div>
                       </div>
                     )}
